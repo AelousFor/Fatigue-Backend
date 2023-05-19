@@ -1,0 +1,17 @@
+com\fatigue\service\DeleteDataService.class
+com\fatigue\config\CorsConfig.class
+com\fatigue\service\GetAllDataService.class
+com\fatigue\dao\UserMapper.class
+com\fatigue\model\base\ResultCode.class
+com\fatigue\service\ReadFileService.class
+com\fatigue\model\base\ErrorBody.class
+com\fatigue\model\base\RespCode.class
+com\fatigue\model\DTO\DataDTO.class
+com\fatigue\model\Information.class
+com\fatigue\model\base\RespBody.class
+com\fatigue\dao\UserRepository.class
+com\fatigue\controller\UserController.class
+com\fatigue\service\CustomDataListener.class
+com\fatigue\controller\FileController.class
+com\fatigue\service\InsertService.class
+com\fatigue\ServerApplication.class
