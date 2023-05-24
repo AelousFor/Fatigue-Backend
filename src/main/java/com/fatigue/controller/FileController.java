@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collection;
+import java.util.List;
 
 @RequestMapping("/file")
 @RestController
@@ -24,7 +25,7 @@ public class FileController {
     }
 
     @GetMapping("/get")
-    public RespBody<Collection<Integer>> getFile(@RequestParam Integer row) {
-        return RespBody.ok(readFileService.readExcelByRowNum(row));
+    public RespBody<List<Collection<Integer>>> getFile() {
+        return RespBody.ok(readFileService.readExcelByRowNum());
     }
 }

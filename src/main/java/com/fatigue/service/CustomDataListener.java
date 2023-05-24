@@ -22,7 +22,7 @@ public class CustomDataListener extends AnalysisEventListener<Map<Integer, Integ
     public void doAfterAllAnalysed(AnalysisContext analysisContext) {
     }
 
-    public Collection<Integer> getList(Integer row) {
-        return list.get(row);
+    public List<Collection<Integer>> getList() {
+        return list;
     }
 }
