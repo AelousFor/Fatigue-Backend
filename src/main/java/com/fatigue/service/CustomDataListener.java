@@ -14,7 +14,9 @@ public class CustomDataListener extends AnalysisEventListener<Map<Integer, Integ
 
     @Override
     public void invoke(Map<Integer, Integer> data, AnalysisContext analysisContext) {
-        list.add(data.values());
+        if (list.size() < 61) {
+            list.add(data.values());
+        }
     }
 
     // 全部行都读取完成后会调用该方法
