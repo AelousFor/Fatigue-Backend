@@ -9,8 +9,16 @@ import java.util.List;
 @Service
 public class ReadFileService {
 
-    public List<Collection<Integer>> readExcelByRowNum() {
+    public List<Collection<Integer>> readFatigue() {
 //        String fileName = "D:\\桌面\\data.csv";
+        String fileName = "/www/wwwroot/fa/data.csv";
+        CustomDataListener listener = new CustomDataListener();
+        // 读取第rowNum行数据
+        EasyExcel.read(fileName, listener).sheet().doRead();
+        return listener.getList();
+    }
+
+    public List<Collection<Integer>> readWave() {
         String fileName = "/www/wwwroot/fa/data.csv";
         CustomDataListener listener = new CustomDataListener();
         // 读取第rowNum行数据

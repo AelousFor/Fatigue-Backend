@@ -23,8 +23,13 @@ public class FileController {
         this.readFileService = readFileService;
     }
 
-    @GetMapping("/get")
-    public RespBody<List<Collection<Integer>>> getFile() {
-        return RespBody.ok(readFileService.readExcelByRowNum());
+    @GetMapping("/getWave")
+    public RespBody<List<Collection<Integer>>> getWave() {
+        return RespBody.ok(readFileService.readWave());
+    }
+
+    @GetMapping("/getFatigue")
+    public RespBody<List<Collection<Integer>>> getFatigue() {
+        return RespBody.ok(readFileService.readFatigue());
     }
 }
